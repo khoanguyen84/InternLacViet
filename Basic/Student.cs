@@ -5,7 +5,7 @@ namespace Basic
     // private
     // internal (default)
     // protected
-    public class Student
+    public class Student : Object
     {
         // fileds (access modifiers = private) - naming convention: camelCase
         private string studentCode;
@@ -50,6 +50,11 @@ namespace Basic
         {
             get => this.studentCode;
             set => this.studentCode = value;
+        }
+
+        public override string ToString()
+        {
+            return $"Hello I'm {this.Fullname}";
         }
     }
 }

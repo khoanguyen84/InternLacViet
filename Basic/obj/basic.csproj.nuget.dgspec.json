@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Class\\InternLacViet\\basic\\basic.csproj": {}
+    "D:\\Class\\InternLacViet\\Basic\\basic.csproj": {}
   },
   "projects": {
-    "D:\\Class\\InternLacViet\\basic\\basic.csproj": {
+    "D:\\Class\\InternLacViet\\Basic\\basic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Class\\InternLacViet\\basic\\basic.csproj",
+        "projectUniqueName": "D:\\Class\\InternLacViet\\Basic\\basic.csproj",
         "projectName": "basic",
-        "projectPath": "D:\\Class\\InternLacViet\\basic\\basic.csproj",
+        "projectPath": "D:\\Class\\InternLacViet\\Basic\\basic.csproj",
         "packagesPath": "C:\\Users\\Khoa Nguyen\\.nuget\\packages\\",
-        "outputPath": "D:\\Class\\InternLacViet\\basic\\obj\\",
+        "outputPath": "D:\\Class\\InternLacViet\\Basic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Khoa Nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
