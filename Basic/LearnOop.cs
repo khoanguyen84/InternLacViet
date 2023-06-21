@@ -34,9 +34,18 @@ namespace Basic
             // Console.WriteLine(quang.Introduction());
             // Console.WriteLine(quang.ToString());
 
-            Staff thu = new Staff("CGH001", "Thu");
+            // Staff thu = new Staff("CGH001", "Thu");
             // Console.WriteLine(thu.GetInfo(true));
-            thu.GetInfo(false, true);
+            // thu.GetInfo(false, true);
+            // Chicken chicken = new Chicken();
+            // chicken.Move();
+            // chicken.Speaker();
+
+            // MyMath rectangle = new MyMath();
+            MyMath.GetArea(10, 20);
+            // rectangle.GetPrimer(20, 30);
+
+            Farther obj = new Farther();
         }
     }
 }

@@ -1,0 +1,15 @@
+D:\Class\InternLacViet\Collection\bin\Debug\net7.0\Collection.exe
+D:\Class\InternLacViet\Collection\bin\Debug\net7.0\Collection.deps.json
+D:\Class\InternLacViet\Collection\bin\Debug\net7.0\Collection.runtimeconfig.json
+D:\Class\InternLacViet\Collection\bin\Debug\net7.0\Collection.dll
+D:\Class\InternLacViet\Collection\bin\Debug\net7.0\Collection.pdb
+D:\Class\InternLacViet\Collection\obj\Debug\net7.0\Collection.csproj.AssemblyReference.cache
+D:\Class\InternLacViet\Collection\obj\Debug\net7.0\Collection.GeneratedMSBuildEditorConfig.editorconfig
+D:\Class\InternLacViet\Collection\obj\Debug\net7.0\Collection.AssemblyInfoInputs.cache
+D:\Class\InternLacViet\Collection\obj\Debug\net7.0\Collection.AssemblyInfo.cs
+D:\Class\InternLacViet\Collection\obj\Debug\net7.0\Collection.csproj.CoreCompileInputs.cache
+D:\Class\InternLacViet\Collection\obj\Debug\net7.0\Collection.dll
+D:\Class\InternLacViet\Collection\obj\Debug\net7.0\refint\Collection.dll
+D:\Class\InternLacViet\Collection\obj\Debug\net7.0\Collection.pdb
+D:\Class\InternLacViet\Collection\obj\Debug\net7.0\Collection.genruntimeconfig.cache
+D:\Class\InternLacViet\Collection\obj\Debug\net7.0\ref\Collection.dll

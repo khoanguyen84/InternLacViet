@@ -1,0 +1,7 @@
+namespace Basic
+{
+    class Son
+    {
+
+    }
+}
