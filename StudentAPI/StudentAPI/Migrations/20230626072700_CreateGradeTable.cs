@@ -7,32 +7,32 @@
 namespace StudentAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class initDb : Migration
+    public partial class CreateGradeTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Students",
+                name: "Grades",
                 columns: table => new
                 {
-                    StudentId = table.Column<int>(type: "int", nullable: false)
+                    GradeId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FullName = table.Column<string>(type: "NVARCHAR(50)", maxLength: 50, nullable: false),
-                    Email = table.Column<string>(type: "NVARCHAR(50)", maxLength: 50, nullable: false)
+                    GradeName = table.Column<string>(type: "NVARCHAR(50)", maxLength: 50, nullable: false),
+                    Completed = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Students", x => x.StudentId);
+                    table.PrimaryKey("PK_Grades", x => x.GradeId);
                 });
 
             migrationBuilder.InsertData(
-                table: "Students",
-                columns: new[] { "StudentId", "Email", "FullName" },
+                table: "Grades",
+                columns: new[] { "GradeId", "Completed", "GradeName" },
                 values: new object[,]
                 {
-                    { 1, "khoa.nguyen@codegym.vn", "Khoa Nguyễn" },
-                    { 2, "phu@gmail.com", "Phú Nguyễn" }
+                    { 1, false, "C0523H1" },
+                    { 2, false, "C0623G1" }
                 });
         }
 
@@ -40,7 +40,7 @@ namespace StudentAPI.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Students");
+                name: "Grades");
         }
     }
 }

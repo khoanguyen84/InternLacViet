@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StudentAPI.Contexts;
 
@@ -10,9 +11,11 @@ using StudentAPI.Contexts;
 namespace StudentAPI.Migrations
 {
     [DbContext(typeof(StudentContext))]
-    partial class StudentContextModelSnapshot : ModelSnapshot
+    [Migration("20230626073335_Create_Relationship_Grade_Student")]
+    partial class Create_Relationship_Grade_Student
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,27 +99,6 @@ namespace StudentAPI.Migrations
                             StudentId = 2,
                             Email = "phu@gmail.com",
                             FullName = "Phú Nguyễn",
-                            GradeId = 2
-                        },
-                        new
-                        {
-                            StudentId = 3,
-                            Email = "luong@gmail.com",
-                            FullName = "Lượng Nguyễn",
-                            GradeId = 1
-                        },
-                        new
-                        {
-                            StudentId = 4,
-                            Email = "thien@gmail.com",
-                            FullName = "Thiện Nguyễn",
-                            GradeId = 2
-                        },
-                        new
-                        {
-                            StudentId = 5,
-                            Email = "duy@gmail.com",
-                            FullName = "Duy Nguyễn",
                             GradeId = 2
                         });
                 });

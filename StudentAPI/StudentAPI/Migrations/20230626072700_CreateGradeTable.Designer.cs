@@ -11,8 +11,8 @@ using StudentAPI.Contexts;
 namespace StudentAPI.Migrations
 {
     [DbContext(typeof(StudentContext))]
-    [Migration("20230623035706_initDb")]
-    partial class initDb
+    [Migration("20230626072700_CreateGradeTable")]
+    partial class CreateGradeTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,6 +23,41 @@ namespace StudentAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("StudentAPI.Entities.Grade", b =>
+                {
+                    b.Property<int>("GradeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GradeId"));
+
+                    b.Property<bool>("Completed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("GradeName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR(50)");
+
+                    b.HasKey("GradeId");
+
+                    b.ToTable("Grades");
+
+                    b.HasData(
+                        new
+                        {
+                            GradeId = 1,
+                            Completed = false,
+                            GradeName = "C0523H1"
+                        },
+                        new
+                        {
+                            GradeId = 2,
+                            Completed = false,
+                            GradeName = "C0623G1"
+                        });
+                });
 
             modelBuilder.Entity("StudentAPI.Entities.Student", b =>
                 {

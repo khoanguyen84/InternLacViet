@@ -15,5 +15,8 @@ namespace StudentAPI.Entities
         [Column(TypeName = "NVARCHAR(50)")]
         [StringLength(50)]
         public string Email { get; set; }
+        [ForeignKey("Grade")]
+        public int GradeId { get; set; }
+        public Grade Grade { get; set; }
     }
 }
