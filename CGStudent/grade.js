@@ -20,4 +20,36 @@ function renderGrade() {
     })
 }
 
+function createGrade() {
+    let createObj = {
+        "gradeName": $("#gradeName").val(),
+        "completed": $("#completed").is(":checked")
+    }
+    $.ajax({
+        url: "https://localhost:7169/api/Grade",
+        method: "POST",
+        contentType: "application/json",
+        data: JSON.stringify(createObj),
+        success: function (result) {
+            if (result.success) {
+                alert(result.message)
+                let payload = result.payload;
+                $('#tbGrade').append(`
+                                        <tr>
+                                            <td>${payload.gradeId}</td>
+                                            <td>${payload.gradeName}</td>
+                                            <td>
+                                                <a href='student.html?gradeid=${payload.gradeId}'>${payload.students ? payload.students.length : 0}</a>
+                                            </td>
+                                            <td>${payload.completed}</td>
+                                        </tr>
+                                        `);
+            }
+            else {
+                alert(result.message)
+            }
+        }
+    })
+}
+
 renderGrade()
